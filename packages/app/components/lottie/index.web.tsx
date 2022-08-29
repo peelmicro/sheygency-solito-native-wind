@@ -1,12 +1,12 @@
 import { useLottie, LottieOptions } from 'lottie-react'
 
-export default function LottiComponent({
-  lottiDocument,
+export default function LottieComponent({
+  lottieDocument,
 }: {
-  lottiDocument: string
+  lottieDocument: string
 }) {
   try {
-    const animationData = require(`../../assets/lottie/${lottiDocument}`)
+    const animationData = require(`../../assets/lottie/${lottieDocument}`)
     if (!animationData) {
       return null
     }
@@ -15,18 +15,12 @@ export default function LottiComponent({
       loop: true,
       autoplay: true,
     }
-    // const style = {
-    //   height: '500px',
-    //   width: '500px',
-    // }
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const { View } = useLottie(options)
-    // const { View } = useLottie(options, style)
-    // const { View } = useLottie(options)
 
     return View
   } catch (error) {
-    console.log(`Lotti: ${lottiDocument}:`, error)
+    console.log(`Lottie: ${lottieDocument}:`, error)
     return null
   }
 }

@@ -75,9 +75,9 @@ export const NavigationProvider = ({
                 )}
                 <div
                   className={`px-8 md:px-20 bg-primary py-5 ${
-                    index === 0 && 'rounded-l'
+                    index === 0 ? 'rounded-l' : ''
                   } ${
-                    index === menuItems.length - 1 && 'rounded-r'
+                    index === menuItems.length - 1 ? 'rounded-r' : ''
                   } flex items-center justify-center space-x-2`}
                 >
                   {router.asPath !== item.path && (

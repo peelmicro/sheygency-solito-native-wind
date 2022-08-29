@@ -2,26 +2,26 @@ import LottieView from 'lottie-react-native'
 import { styled } from 'nativewind'
 const StyledLottie = styled(LottieView)
 
-export default function LottiComponent({
-  lottiDocument,
+export default function LottieComponent({
+  lottieDocument,
 }: {
-  lottiDocument: string
+  lottieDocument: string
 }) {
-  let lottiSource: any
+  let lottieSource: any
   // With react Native we cannot read local documents on the fly
   // The problem is that Android put the documents in a special folder
   // And React.Native when it sees that we have put require or import
   // it copies the document.
   // Any other solution like trying to use Axios or react-native-fs don't work
-  switch (lottiDocument) {
+  switch (lottieDocument) {
     case 'marketing.json':
-      lottiSource = require(`../../assets/lottie/marketing.json`)
+      lottieSource = require(`../../assets/lottie/marketing.json`)
       break
     case 'forget-password.json':
-      lottiSource = require(`../../assets/lottie/forget-password.json`)
+      lottieSource = require(`../../assets/lottie/forget-password.json`)
       break
     case 'review-clients.json':
-      lottiSource = require(`../../assets/lottie/review-clients.json`)
+      lottieSource = require(`../../assets/lottie/review-clients.json`)
       break
     default:
       break
@@ -29,13 +29,18 @@ export default function LottiComponent({
   try {
     return (
       <>
-        {!lottiSource ? null : (
-          <StyledLottie source={lottiSource} autoPlay loop className="w-full" />
+        {!lottieSource ? null : (
+          <StyledLottie
+            source={lottieSource}
+            autoPlay
+            loop
+            className="w-full"
+          />
         )}
       </>
     )
   } catch (error) {
-    console.log(`Lotti: ${lottiDocument}:`, error)
+    console.log(`Lottie: ${lottieDocument}:`, error)
     return null
   }
 }

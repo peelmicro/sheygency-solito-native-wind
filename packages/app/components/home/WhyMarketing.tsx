@@ -1,5 +1,5 @@
 import { View, Text } from 'react-native'
-import LottiComponent from '../lotti'
+import LottieComponent from '../lottie'
 
 function WhyMarketing() {
   return (
@@ -8,7 +8,7 @@ function WhyMarketing() {
         <Text>Why </Text>
         <Text className="text-secondary">Marketing</Text>
       </Text>
-      <LottiComponent lottiDocument="forget-password.json" />
+      <LottieComponent lottieDocument="forget-password.json" />
       <Text className="text-gray-600 text-md mt-10">
         Do you know what your customers want? Do you think your customers trust
         your products? When was the last time you saw a customer tweeting about

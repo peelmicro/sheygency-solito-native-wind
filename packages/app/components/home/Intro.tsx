@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native'
 import { Button } from '../button'
-import LottiComponent from '../lotti'
+import LottieComponent from '../lottie'
 
 export function HomeIntro() {
   return (
@@ -20,7 +20,7 @@ export function HomeIntro() {
         />
       </View>
       <View className="w-full md:basis-1/2 p-10">
-        <LottiComponent lottiDocument="marketing.json" />
+        <LottieComponent lottieDocument="marketing.json" />
       </View>
     </View>
   )
