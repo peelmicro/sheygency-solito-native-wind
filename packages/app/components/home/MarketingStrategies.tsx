@@ -2,7 +2,7 @@
 import { MotiPressable } from 'moti/interactions'
 import { View, Text, Image } from 'react-native'
 
-function HomeMarketingStrategies() {
+export default function HomeMarketingStrategies() {
   const strategies = [
     {
       title: 'CONTENT MARKETING',
@@ -81,5 +81,3 @@ function HomeMarketingStrategies() {
     </View>
   )
 }
-
-export default HomeMarketingStrategies

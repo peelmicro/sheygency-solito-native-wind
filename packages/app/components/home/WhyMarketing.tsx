@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import LottieComponent from '../lottie'
 
-function WhyMarketing() {
+export default function WhyMarketing() {
   return (
     <View className="mt-20 mb-20 flex items-center justify-center">
       <Text className="text-center text-5xl font-semibold text-primary md:text-8xl">
@@ -26,5 +26,3 @@ function WhyMarketing() {
     </View>
   )
 }
-
-export default WhyMarketing

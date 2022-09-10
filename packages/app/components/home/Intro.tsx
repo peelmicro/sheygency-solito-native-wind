@@ -10,7 +10,7 @@ export function HomeIntro() {
           The Best{`\n`}
           <Text className="text-secondary font-bold">Marketing</Text>
         </Text>
-        <Text className="text-4xl font-semibold text-black dark:text-white">
+        <Text className="text-4xl font-semibold text-black dark:text-white ">
           {"Doesn't feel like marketing"}
         </Text>
         <Button

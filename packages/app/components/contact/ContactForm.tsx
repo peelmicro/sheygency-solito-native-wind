@@ -8,7 +8,7 @@ export function ContactForm() {
         Send a Message
       </Text>
 
-      <View className="flex flex-col md:flex-row mb-10">
+      <View className="flex flex-col md:flex-row mb-10 w-full ios:md:w-5/12 android:md:w-5/12">
         <TextInput
           placeholder="First name"
           className="py-3 px-5 bg-blue-50 focus:outline-none rounded-lg text-gray-500 w-full mb-10 md:mb-0 md:mr-10"
@@ -20,7 +20,7 @@ export function ContactForm() {
         />
       </View>
 
-      <View className="flex flex-col md:flex-row mb-10">
+      <View className="flex flex-col md:flex-row mb-10 w-full ios:md:w-5/12 android:md:w-5/12">
         <TextInput
           placeholder="Email"
           className="py-3 px-5 bg-blue-50 focus:outline-none rounded-lg text-gray-500 w-full mb-10 md:mb-0 md:mr-10"
